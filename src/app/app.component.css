@@ -1,0 +1,77 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  display: grid;
+  grid-template-columns: 50px 150px 800px 30px;
+  background-color: #f5f5f5;
+  grid-column-gap: 50px;
+  height: 60px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  text-align: right;
+  text-decoration: none;
+  color: #b0bec5;
+  padding-top: 25px;
+}
+
+.avatar {
+ margin-top: -13px;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+}
+
+#home {
+ text-align: end;
+ margin-top: -7px;
+  width: 100px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: x-large;
+  color: black;
+}
+
+* {
+ box-sizing: border-box; 
+}
+
+/* Create a column layout with Flexbox */
+.row {
+ display: flex;
+ width: 200px;
+ height: 800px;
+}
+
+/* Left column (menu) */
+.left {
+ flex: 35%;
+ padding: 15px 0;
+ background-color: #1a237e;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ 
+}
+
+#myMenu li a {
+ padding: 12px;
+ padding-left: 25px;
+ text-decoration: none;
+ color: rgba(0,173,255,.54);
+ display: block;
+ font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#myMenu li a:hover {
+ background-color: #2a9fd8;
+ color: #1a237e;
+ cursor: pointer;
+ touch-action: auto;
+}
+
