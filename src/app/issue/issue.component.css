@@ -1,0 +1,121 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 500px;
+    grid-template-columns: 80%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 80% 80% 80%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 80% 80% 80%;
+    padding: 10px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1366px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 90%;
+    padding-left: 10px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+
+  .grid-container {
+    display: grid;
+    width: 500px;
+    grid-template-columns: 80% 80% 80%;
+    padding: 10px;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 2560px) {
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 90%;
+  padding-left: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.grid-container {
+  display: grid;
+  width: 900px;
+  grid-template-columns: 80% 80% 80%;
+  padding: 10px;
+}
+}

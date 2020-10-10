@@ -2,90 +2,28 @@
   /* Styles */
   /* Add a black background color to the top navigation */
   .topnav {
-    display: grid;
-    grid-template-columns: 10% 0% 50% 8% 10% 0% 10%;
-    grid-column-gap: 10px;
-    align-items: center;
-  }
-
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    color: #b0bec5;
-  }
-
-  .tracker {
-    width: 120px;
-    height: 45px;
-  }
-
-  .avatar {
-    visibility: hidden;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  .three-dots {
-    height: 45px;
-    width: 40px;
-  }
-  #search {
-    visibility: hidden;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  /* Create a column layout with Flexbox */
-  .row {
-    visibility: hidden;
     display: flex;
-    width: 200px;
-    height: 800px;
-  }
-
-  /* Left column (menu) */
-  .left {
-    flex: 300%;
-    background-color: #1a237e;
-  }
-
-  /* Style the navigation menu inside the left column */
-  #myMenu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #myMenu li a {
-    padding: 12px;
-    padding-left: 25px;
-    text-decoration: none;
-    color: rgba(0, 173, 255, 0.54);
-    display: block;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-
-  #myMenu li a:hover {
-    background-color: #2a9fd8;
-    color: #1a237e;
-    cursor: pointer;
-    touch-action: auto;
-  }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
-  /* Styles */
-  /* Add a black background color to the top navigation */
-  .topnav {
-    display: grid;
-    grid-template-columns: 0% 20% 70% 2% 0% 0% 0%;
-    grid-column-gap: 10px;
+    flex-direction: row;
     align-items: center;
+    height: 50px;
   }
 
-  /* Style the links inside the navigation bar */
+  #home {
+    width: 20%;
+    padding-left: 2.5%;
+  }
+
+  #title {
+    width: 70%;
+  }
+
+  #search {
+    width: 55%;
+  }
+
+  #alert {
+    width: 15%;
+  }
   .topnav a {
     color: #b0bec5;
   }
@@ -97,50 +35,161 @@
     border-radius: 50%;
   }
 
-  .three-dots {
-    height: 45px;
+  /* Create a column layout with Flexbox */
+  .row {
+    /* display: flex; */
+  }
+
+  .left {
+    visibility: collapse;
+  }
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    /* height: 600px;
+    width: 129px; */
+  }
+
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: rgba(0, 173, 255, 0.54);
+    display: block;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  #myMenu li a:hover {
+    background-color: #2a9fd8;
+    color: #1a237e;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+  /* Styles */
+  /* Add a black background color to the top navigation */
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+  }
+
+  #home {
+    width: 20%;
+    padding-left: 2.5%;
+  }
+
+  #title {
+    width: 70%;
+  }
+
+  #search {
+    width: 55%;
+  }
+
+  #alert {
+    width: 15%;
+  }
+  .topnav a {
+    color: #b0bec5;
+  }
+
+  .avatar {
+    margin-top: 2px;
     width: 40px;
-  }
-
-  #search1 {
-    visibility: hidden;
-  }
-
-  #menuIcon {
-    visibility: hidden;
-  }
-
-  .three-dots {
-    visibility: hidden;
-  }
-
-  * {
-    box-sizing: border-box;
+    height: 40px;
+    border-radius: 50%;
   }
 
   /* Create a column layout with Flexbox */
   .row {
     display: flex;
-    width: 400px;
-    height: 800px;
   }
 
-  /* Left column (menu) */
-  .left {
-    flex: 400%;
-    background-color: #1a237e;
+
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    height: 600px;
+    width: 200px;
   }
-  
-  .right {
-    height: 80%;
-    width: 180%;
+
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: rgba(0, 173, 255, 0.54);
+    display: block;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  #myMenu li a:hover {
+    background-color: #2a9fd8;
+    color: #1a237e;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+  /* Styles */
+  /* Add a black background color to the top navigation */
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+  }
+
+  #home {
+    width: 8%;
+    padding-left: 2.5%;
+  }
+
+  #title {
+    width: 20%;
+  }
+
+  #search {
+    width: 75%;
+  }
+
+  #alert {
+    width: 5%;
+  }
+
+  .topnav a {
+    color: #b0bec5;
+  }
+
+  .avatar {
+    margin-top: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  /* Create a column layout with Flexbox */
+  .row {
+    display: flex;  
+  }
+
+  .left {
+    background-color: #1a237e;    
   }
 
   /* Style the navigation menu inside the left column */
   #myMenu {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
+    height: 600px;
+    width: 200px;
   }
 
   #myMenu li a {
@@ -157,7 +206,6 @@
     background-color: #2a9fd8;
     color: #1a237e;
     cursor: pointer;
-    touch-action: auto;
   }
 }
 
@@ -166,13 +214,29 @@
   /* Styles */
   /* Add a black background color to the top navigation */
   .topnav {
-    display: grid;
-    grid-template-columns: 0% 20% 70% 2% 0% 0% 0%;
-    grid-column-gap: 10px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    height: 50px;
   }
 
-  /* Style the links inside the navigation bar */
+  #home {
+    width: 8%;
+    padding-left: 2.5%;
+  }
+
+  #title {
+    width: 20%;
+  }
+
+  #search {
+    width: 75%;
+  }
+
+  #alert {
+    width: 5%;
+  }
+
   .topnav a {
     color: #b0bec5;
   }
@@ -184,50 +248,18 @@
     border-radius: 50%;
   }
 
-  .three-dots {
-    height: 45px;
-    width: 40px;
-  }
-
-  #search1 {
-    visibility: hidden;
-  }
-
-  #menuIcon {
-    visibility: hidden;
-  }
-
-  .three-dots {
-    visibility: hidden;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
   /* Create a column layout with Flexbox */
   .row {
     display: flex;
-    width: 400px;
-    height: 800px;
-  }
-
-  /* Left column (menu) */
-  .left {
-    flex: 200%;
-    background-color: #1a237e;
-  }
-
-  .right {
-    height: 80%;
-    width: 60%;
   }
 
   /* Style the navigation menu inside the left column */
   #myMenu {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
+    height: 600px;
+    width: 200px;
   }
 
   #myMenu li a {
@@ -244,7 +276,6 @@
     background-color: #2a9fd8;
     color: #1a237e;
     cursor: pointer;
-    touch-action: auto;
   }
 }
 
@@ -253,13 +284,29 @@
   /* Styles */
   /* Add a black background color to the top navigation */
   .topnav {
-    display: grid;
-    grid-template-columns: 0% 10% 83% 2% 0% 0% 0%;
-    grid-column-gap: 10px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    height: 50px;
   }
 
-  /* Style the links inside the navigation bar */
+  #home {
+    width: 8%;
+    padding-left: 2.5%;
+  }
+
+  #title {
+    width: 20%;
+  }
+
+  #search {
+    width: 75%;
+  }
+
+  #alert {
+    width: 5%;
+  }
+
   .topnav a {
     color: #b0bec5;
   }
@@ -271,44 +318,18 @@
     border-radius: 50%;
   }
 
-  .three-dots {
-    height: 45px;
-    width: 40px;
-  }
-
-  #search1 {
-    visibility: hidden;
-  }
-
-  #menuIcon {
-    visibility: hidden;
-  }
-
-  .three-dots {
-    visibility: hidden;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
   /* Create a column layout with Flexbox */
   .row {
     display: flex;
   }
 
-  /* Left column (menu) */
-  .left {
-    flex: 300%;
-    background-color: #1a237e;
-  }
-
-
   /* Style the navigation menu inside the left column */
   #myMenu {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
+    height: 600px;
+    width: 200px;
   }
 
   #myMenu li a {
@@ -325,6 +346,5 @@
     background-color: #2a9fd8;
     color: #1a237e;
     cursor: pointer;
-    touch-action: auto;
   }
 }
