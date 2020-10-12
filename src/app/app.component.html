@@ -1,17 +1,63 @@
 <!-- Header -->
 <header>
   <div class="topnav">
-    <a id="home">tracker</a>
-    <a id="search"><i class="fa fa-fw fa-search"></i>search</a>
+    <a id="home"
+      ><img src="../assets/images/Logo.svg" alt="Tracker" class="tracker"
+    /></a>
+    <h1
+      id="title"
+      style="
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+      "
+    >
+      tracker
+    </h1>
+    <a id="search"
+      ><img
+        src="../assets/images/icon_search.svg"
+        alt="search"
+        style="height: 15px; width: 15px"
+      />&nbsp;Search</a
+    >
     <a id="alert"> <i class="fa fa-bell"></i></a>
-    <a id="avatar"><img src="../assets/images/imgBg.jpg" alt="Avatar" class="avatar" /></a>
+    <a id="avatar"
+      ><img src="../assets/images/Sijo.svg" alt="Avatar" class="avatar"
+    /></a>
   </div>
 </header>
-<div class="row">
- <div class="left" style="background-color:#080d3f;">
-   <ul id="myMenu">
-     <li><a id="menuList1"><i class="fa fa-bar-chart" style="font-size:24px"></i>&nbsp;Dashboard</a></li>
-     <li><a id="menuList2"><i class="fa fa-check-square-o" style="font-size:24px"></i>&nbsp;Issues</a></li>
-     <li><a id="menuList3"><i class="fa fa-plus" style="font-size:24px"></i>&nbsp;Create</a></li>
-   </ul>
- </div>
+<div class="flex-container">
+  <div class="row">
+    <div class="left" style="background-color: #080d3f">
+      <ul id="myMenu">
+        <li>
+          <a id="menuList1" routerLink=""
+            ><img
+              src="../assets/images/Dashboard.svg"
+              alt=""
+            />&nbsp;&nbsp;Dashboard</a
+          >
+        </li>
+        <li>
+          <a id="menuList2" routerLink="issue"
+            ><img
+              src="../assets/images/Issues.svg"
+              alt="issue"
+            />&nbsp;&nbsp;Issue</a
+          >
+        </li>
+        <li>
+          <a id="menuList3" routerLink="create"
+            ><img
+              src="../assets/images/Create.svg"
+              alt="create"
+            />&nbsp;&nbsp;Create</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

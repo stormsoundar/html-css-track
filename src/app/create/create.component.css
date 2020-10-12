@@ -1,0 +1,54 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ /* Styles */
+ .input {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; 
+ }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+ /* Styles */
+ .input {
+  display: grid;
+  grid-template-columns: 5% 15% 30% 1% 15% 30%;
+  /* grid-column-gap: 20px; */
+  align-items: center;
+  padding-left: 10px; 
+ }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+ /* Styles */
+ .input {
+  display: grid;
+  grid-template-columns: 5% 15% 40% 1% 25% 40%;
+  grid-column-gap: 20px;
+  align-items: center;
+  padding-left: 10px; 
+ }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1366px) {
+ /* Styles */
+ .input {
+  display: grid;
+  grid-template-columns: 5% 15% 50% 1% 25% 50%;
+  grid-column-gap: 20px;
+  align-items: center;
+  padding-left: 10px; 
+ }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 2560px) {
+ /* Styles */
+ .input {
+  display: grid;
+  grid-template-columns: 5% 15% 40% 1% 25% 40%;
+  grid-column-gap: 20px;
+  align-items: center;
+  padding-left: 10px; 
+ }
+}
